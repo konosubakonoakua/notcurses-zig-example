@@ -33,25 +33,12 @@ Thanks to Zig's seamless C interop the library can be used directly without wrap
 
 ### Build and run
 
-Build and run the demo:
 ```sh
+# Build and run the demo:
 zig build run
-```
-
-Or build and run the binary separately:
-```sh
-zig build
-./zig-cache/run/demo
-```
-
-### Liz source
-
-The source of this demo is actually written in [Liz](https://github.com/dundalek/liz), which is Zig dialect with [lispy syntax](https://en.m.wikipedia.org/wiki/S-expression) that transpiles down to Zig code. If you feel adventurous to explore land of parentheses you can  [download Liz](https://github.com/dundalek/liz/releases/latest) and compile sources with:
-
-```sh
-liz src/*.liz && zig build
+# build and run the binary separately:
+zig build && ./zig-cache/run/demo
 ```
 
 ### Related
 
-See also the demo implemented in [Clojure](https://github.com/dundalek/notcurses-clojure-example).
